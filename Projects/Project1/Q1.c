@@ -58,7 +58,7 @@ void generate(struct student* students) {
 		students[i].id = i + 1;
 	}
 
-	for (int i = 9; i >= 0; i--) {
+	for (int i = maxID - 1; i >= 0; i--) {
 		j = rand() % (i + 1);
 
 		temp = students[j].id;
