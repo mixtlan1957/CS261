@@ -25,15 +25,15 @@ void fooA(int* iptr){
 
 	
 	/*Print the value pointed to by iptr*/
-	tempPrint = *iptr;
+	tempPrint = (int)*iptr;
 	printf("Value pointed to by iptr* :    %d\n", tempPrint);
      
      /*Print the address pointed to by iptr*/
-	tempPrint = iptr;
+	tempPrint = (int)iptr;
 	printf("Address pointed to by iptr*:   %d\n", tempPrint);
      
      /*Print the address of iptr itself*/
-	tempPrint = &iptr;
+	tempPrint = (int)&iptr;
 	printf("Address of iptr itself:        %d\n", tempPrint);
 }
 
