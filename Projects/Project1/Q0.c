@@ -21,15 +21,20 @@
  ** Post-Conditions: None
  *********************************************************************/
 void fooA(int* iptr){
+	int tempPrint;
+
 	
 	/*Print the value pointed to by iptr*/
-	printf("Value pointed to by iptr* :    %d\n", *iptr);
+	tempPrint = *iptr;
+	printf("Value pointed to by iptr* :    %d\n", tempPrint);
      
      /*Print the address pointed to by iptr*/
-	printf("Address pointed to by iptr*:   %d\n", iptr);
+	tempPrint = iptr;
+	printf("Address pointed to by iptr*:   %d\n", tempPrint);
      
      /*Print the address of iptr itself*/
-	printf("Address of iptr itself:        %d\n", &iptr);
+	tempPrint = &iptr;
+	printf("Address of iptr itself:        %d\n", tempPrint);
 }
 
 int main(){
@@ -37,9 +42,11 @@ int main(){
     /*declare an integer x*/
 	int x = 7;
 	int *iptr = &x;
-    
+	
+
     /*print the address of x*/
-	printf("Address of x:                  %d\n", &x);
+	int tempPrint = &x;
+	printf("Address of x:                  %d\n", tempPrint);
 
     /*Call fooA() with the address of x*/
 	fooA(iptr);
