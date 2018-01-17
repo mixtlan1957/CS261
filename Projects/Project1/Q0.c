@@ -23,7 +23,7 @@
 void fooA(int* iptr){
 
 	/*Print the value pointed to by iptr*/
-	printf("Value pointed to by iptr* :    %p\n", *iptr);
+	printf("Value pointed to by iptr* :    %d\n", *iptr);
      
      /*Print the address pointed to by iptr*/
 	printf("Address pointed to by iptr*:   %p\n", iptr);
