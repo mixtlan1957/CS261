@@ -1,6 +1,6 @@
 /* CS261- Assignment 1 - Q.5*/
-/* Name:
- * Date:
+/* Name: Mario Franco-Munoz
+ * Date: 01/17/2018
  * Solution description:
  */
  
@@ -8,11 +8,10 @@
 #include <stdlib.h>
 
  /*********************************************************************
- ** Function: 
- ** Description: 
- ** Parameters: 
- ** Pre-Conditions:
- ** Post-Conditions:
+ ** Function: toUpperCase
+ ** Description: converts a character from lower case to upper case 
+ ** Parameters: single character to be converted
+ ** Pre-Conditions: function does not value check. Ensure input is a letter prior to running.
  *********************************************************************/
 /*converts ch to upper case, assuming it is in lower case currently*/
 char toUpperCase(char ch){
@@ -20,11 +19,10 @@ char toUpperCase(char ch){
 }
 
 /*********************************************************************
-** Function:
-** Description:
-** Parameters:
-** Pre-Conditions:
-** Post-Conditions:
+** Function: toLowerCase
+** Description: converts a character from upper case to lower case
+** Parameters: single character to be converted
+** Pre-Conditions: function does not value check. Ensure input is a letter prior to running.
 *********************************************************************/
 /*converts ch to lower case, assuming it is in upper case currently*/
 char toLowerCase(char ch){
@@ -32,11 +30,11 @@ char toLowerCase(char ch){
 }
 
 /*********************************************************************
-** Function:
-** Description:
-** Parameters:
-** Pre-Conditions:
-** Post-Conditions:
+** Function: sticky
+** Description: converts input word to sticky notation: sticky becomes StIcKy
+** Parameters: single word passed as a c-style string (array of characters)
+** Pre-Conditions: single word consiting of only letters must be passed to function
+** Post-Consitions: converts word to "sticky" notation
 *********************************************************************/
 void sticky(char* word){
 	int index = 0;
@@ -75,7 +73,7 @@ int main(){
 
     /*Read word from the keyboard using scanf*/
 	printf("Please enter a single word.\n");
-	scanf("%s", &inputString);
+	scanf("%s", inputString);
 
     /*Call sticky*/
 	sticky(inputString);
