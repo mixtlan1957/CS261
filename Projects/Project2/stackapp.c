@@ -4,7 +4,7 @@
 ** Date: 01/20/2018
 ** Description: This program implements a stack ADT for the purpose of keeping track of
 ** parenthesis characters to ensure that parenthesis are balanced.
-** Input: character input
+** Input: character input - a string entered as a command line argument.
 ** Output: status of expression (parenthesis balanced or not)
 *********************************************************************/
 
