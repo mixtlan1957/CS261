@@ -14,11 +14,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include "dynArray.h"
-
-
-#define _CRTDBG_MAP_ALLOC  
-#include <stdlib.h>  
-#include <crtdbg.h>  
+ 
 
 /* ***************************************************************
 Using stack to check for unbalanced parentheses.
@@ -113,8 +109,6 @@ int main(int argc, char* argv[]){
 		printf("The string %s is balanced\n",s);
 	else 
 		printf("The string %s is not balanced\n",s);
-
-	_CrtDumpMemoryLeaks();
 	
 	return 0;	
 }
