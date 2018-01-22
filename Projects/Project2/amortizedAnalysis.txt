@@ -1,0 +1,37 @@
+Mario Franco-Munoz
+CS 261-400 Assignment 2, Part 2: Amortized Analysis of the Dynamic Array
+01/21/2018
+
+1)
+Push operations 1 through 8: total of 8 operations. Running total = 8.
+Push operation 9: 9 operations. Running total = 17.
+Push operation 10 through 16: total of 7 operations. Running total = 24
+Push operation 17: 17 operations. Running total = 41.
+Push operation 17 through 32: total of 15 operations. Running total =56
+56 cost units spent in the entire process.
+56 cost units / 32 push operations = 1.75
+
+Utilizing the strategy of doubling the array size every time 
+a resize is necessary as the number of pushes grows large (N), 
+the big-oh complexity approaches O(1). 
+
+This is due to the numerator approaching the value of the denominator as N grows large. 
+(As N grows large, the impact of the array resizes is diminished.)
+
+Considering the amortized execution time notation: O(1)+
+
+
+2)
+Push operations 1 through 8: total of 8 operations. Running total = 8.
+Push operation 9: 9 operations. Running total 17.
+Push operation 10: 1 operation. Running total 18.
+Push operation 11: 11 operations. Running total 29.
+push operation 12: 1 operation. Running total 30.
+push operation 13: 13 operations. Running total 43.
+push operation 14:1 operation. Running total 44.
+push operation 15: 15 operations. Running total 59.
+push operation 16: 1 operation. Running total 60.
+Trend: add odd values, and add 1 for every even value:
+17+19+21+23+25+…+31 = 192 + 8 even values + 60 = 260
+260 / 32 = 8.125
+As N becomes large: O(n)
