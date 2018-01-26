@@ -21,8 +21,6 @@ int main(){
 	linkedListPrint(l);
 
 
-	//linkedListDestroy(1);
-
 
 /* BAG */
 
@@ -36,8 +34,8 @@ int main(){
          linkedListRemove(k, (TYPE)11);
         linkedListPrint(k);
 
-		linkedListDestroy(1);
-		//linkedListDestroy(k);
+		linkedListDestroy(l);
+		linkedListDestroy(k);
 	
 
 	return 0;
