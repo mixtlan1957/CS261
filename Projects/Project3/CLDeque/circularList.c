@@ -1,3 +1,17 @@
+/*********************************************************************
+** Program Filename: circularList.c (Part 2 of Assignment 3)
+** Author: Mario Franco-Munoz
+** Date: 01/26/2018
+** Description: This .c file for the implementation of a circular deque.
+** Interface functions for deque include: adding/removing links at front/back.
+** Printing values in deque (first to last), reversing order of nodes, initializing deque.
+** Printing values held in first/last links.
+** Input: values for new elements to be inserted at either front or back.
+** Output: List of values stored in the deque (front to back) to I/O.
+** First element in deque, single value output to I/O.
+** last element in deque, single value output to I/O.
+*********************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

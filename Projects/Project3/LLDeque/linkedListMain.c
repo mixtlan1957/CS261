@@ -1,6 +1,11 @@
 #include "linkedList.h"
 #include <stdio.h>
 
+#define _CRTDBG_MAP_ALLOC  
+#include <stdlib.h>  
+#include <crtdbg.h> 
+
+
 
 
 int main(){
@@ -34,9 +39,17 @@ int main(){
          linkedListRemove(k, (TYPE)11);
         linkedListPrint(k);
 
+		printf("List is empty %d\n", linkedListIsEmpty(l));
+		printf("List is empty %d\n", linkedListIsEmpty(k));
+
 		linkedListDestroy(l);
 		linkedListDestroy(k);
+
+		printf("List is empty %d\n", linkedListIsEmpty(l));
+		printf("List is empty %d\n", linkedListIsEmpty(k));
 	
+
+		_CrtDumpMemoryLeaks();
 
 	return 0;
 }
