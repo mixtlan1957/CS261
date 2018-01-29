@@ -21,11 +21,7 @@
 
 #ifndef TYPE
 #define TYPE int
-#endif 
-
-#define _CRTDBG_MAP_ALLOC  
-//#include <stdlib.h>  
-#include <crtdbg.h> 
+#endif  
 
 
 struct listQueue {
@@ -337,7 +333,7 @@ int main() {
 	printf("Is empty? (value returned at this point should be a 1):  %d\n", isEmpty(test));
 
 	destroyStack(test);
-	_CrtDumpMemoryLeaks();
+	
 
 	return 0;
 }
