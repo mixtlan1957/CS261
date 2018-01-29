@@ -255,7 +255,7 @@ void listQueueRemoveFront(struct listQueue *q) {
 
 	free(temp);
 	
-	assert(q->firstLink->next != NULL);
+	//assert(q->firstLink->next != NULL);
 
 }
 
