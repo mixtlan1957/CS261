@@ -124,8 +124,7 @@ void printList(DynArr *heap)
 	printf("\n");
 
 
-	free(temp->data);
-	free(temp);
+	freeDynArr(temp);
 
 
 	temp = NULL;
