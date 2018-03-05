@@ -124,12 +124,10 @@ void printList(DynArr *heap)
 	printf("\n");
 
 
-	while (temp->size > 0) {
-		removeMinHeap(temp);
-	}
-
-
+	free(temp->data);
 	free(temp);
+
+
 	temp = NULL;
 }
 
