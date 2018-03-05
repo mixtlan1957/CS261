@@ -1,9 +1,12 @@
 /*********************************************************************
-** Program Filename: dynArray.c (Assignment #4)
+** Program Filename: toDoList.c (Assignment #4)
 ** Author: Mario Franco-Munoz
 ** Due Date: 03/06/2018
-** Description:
-** Output:
+** Description: this file implements the toDoList functions that allow
+** for creating new tasks, saving to do lists, loading to do lists and
+** printing to do lists to I/O. "To do lists" must be formatted as: %d\t%s\n
+** (integer, tab character, string, newline)
+** Output: to do list as heap pointer, I/O to cmd
 *********************************************************************/
 
 
@@ -53,7 +56,7 @@ void saveList(DynArr *heap, FILE *filePtr)
 
 	for (int i = 0; i < sizeDynArr(heap); i++) {
 
-		TYPE newTask = getDynArr(heap, 1);
+		TYPE newTask = getDynArr(heap, i);
 
 		fprintf(filePtr, "%d\t%s\n", newTask.priority, newTask.description);
 	}
@@ -71,7 +74,11 @@ void saveList(DynArr *heap, FILE *filePtr)
 void loadList(DynArr *heap, FILE *filePtr)
 {
 	assert(heap != NULL);
-	
+
+	while (heap->size > 0) {
+		removeMinHeap(heap);
+	}
+
 
 
 	TYPE temp;
