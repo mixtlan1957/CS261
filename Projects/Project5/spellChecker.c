@@ -160,28 +160,18 @@ int main(int argc, const char** argv)
 
 		// Implement the spell checker code here..
 		HashLink *itr = NULL;	//iterator for combing through "map"
-		HashLink *itr2 = NULL;	//iterator for traversing "closeMatches"
 		int found = 0;			//bool for detecting if word was spelled correctly
 		int diff;				//Levenshtein Distance
 		
 
 		//variables for the storage of words that are "close matches"
-		HashMap *closeMatches = hashMapNew(5);
 		char default1[256]=  "DEFAULT1asdfqwer";
 		char default2[256] = "DEFAULT2asdfqwer";
 		char default3[256] = "DEFAULT3asdfqwer";
 		char default4[256] = "DEFAULT4asdfqwer";
 		char default5[256] = "DEFAULT5asdfqwer";
 		int alreadyLoaded = 0;
-		int hashIndex = 0;
 		int itrIndex = 0;
-		int index = 0;
-
-		hashMapPut(closeMatches, default1, 99);
-		hashMapPut(closeMatches, default2, 99);
-		hashMapPut(closeMatches, default3, 99);
-		hashMapPut(closeMatches, default4, 99);
-		hashMapPut(closeMatches, default5, 99);
 
 		char closeMatchesArr[5][256];
 		strcpy(closeMatchesArr[0], default1);

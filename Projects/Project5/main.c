@@ -115,6 +115,9 @@ int main(int argc, const char** argv)
 
 	//close file
 	fcloseCheck = fclose(fileRead);
+	if (fcloseCheck != 0) {
+		printf("Error has occured closing file.\n");
+	}
 
 
     // --- Concordance code ends here ---
