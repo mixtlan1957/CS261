@@ -1,3 +1,17 @@
+/*********************************************************************
+** Program Filename: main.c (Assignment #5)
+** Author: Mario Franco-Munoz
+** Due Date: 03/11/2018
+** Description: This file runs a basic test/implemnation of hashMap.c.
+** Specifically, this program opens a text file and counts occurences of words
+** in that text file. Concurrence check is not case sensitive and text file is read
+** until EOF is reached.
+**
+*********************************************************************/
+
+
+
+
 #include "hashMap.h"
 #include <stdlib.h>
 #include <stdio.h>
